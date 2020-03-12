@@ -64,3 +64,8 @@ button {
   font-family: sans-serif;
   font-weight: 800;
 }
+
+span.timetag {
+  font-size: 0.3rem;
+  color: rgb(97, 97, 97);
+}

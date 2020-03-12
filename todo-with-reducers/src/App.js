@@ -3,6 +3,7 @@ import ToDoList from "./components/TodoList";
 import FormField from "./components/Form";
 import "./App.css";
 import { toDoReducer, initialState } from "./reducers/toDoReducer";
+import * as moment from "moment";
 
 function App() {
   const [state, dispatch] = useReducer(toDoReducer, initialState);
@@ -51,7 +52,7 @@ function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>To-Do List</h1>
+        <h1>{moment().format("dddd")}'s To-Do List </h1>
       </div>
       <div className="form-body">
         <FormField addItem={addItem} />
